@@ -1,0 +1,11 @@
+// Lessons
+// Homeworks
+import Lesson_06 from "./lessons/lesson_06/Lesson_06";
+function App() {
+  return (
+  <>
+  <Lesson_06 />
+  </>
+  )
+}
+export default App;
