@@ -1,0 +1,29 @@
+.cars_list_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: aqua;
+}
+.car_card {
+  width: 180px;
+  padding: 15px;
+  border-radius: 12px;
+  background: #f3f3f3;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.car_title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.car_price,
+.car_engine {
+  margin: 6px 0;
+  font-size: 16px;
+}
