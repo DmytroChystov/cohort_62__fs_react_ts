@@ -1,6 +1,7 @@
 // Lessons
-// Homeworks
 // import Lesson_06 from "./lessons/lesson_06/Lesson_06";
+
+// Homeworks
 import Homerwork_06 from "./homerworks/homerwork_06/Homerwork_06";
 function App() {
   return (
