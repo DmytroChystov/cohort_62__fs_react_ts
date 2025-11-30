@@ -1,8 +1,8 @@
 .cars_list_wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding: 80px;
   flex-wrap: wrap;
   gap: 20px;
@@ -25,5 +25,5 @@
 .car_price,
 .car_engine {
   margin: 6px 0;
-  font-size: 16px;
+  font-size: 16px
 }
