@@ -7,8 +7,9 @@
 
 
 // Homeworks
-// import Homerwork_06 from "homerworks/homerwork_06/Homerwork_06";
-import Homerwork_07 from "homerworks/homerwork_07/Homerwork_07";
+// import Homerwork_06 from "homeworks/Homework_06/Homework_06";
+// import Homework_07 from "homeworks/Homework_07/Homework_07";
+import Homework_08 from "homeworks/Homework_08/Homework_08";
 function App() {
   return (
   <>
@@ -16,8 +17,9 @@ function App() {
     {/* <Lesson_07 /> */}
   {/* <GlobalStyles />
     <Lesson_08 /> */}
-  {/* <Homerwork_06 /> */}
-  <Homerwork_07 />
+    {/* <Homerwork_06 /> */}
+    {/* <Homework_07 /> */}
+    <Homework_08 />
   </>
   )
 }
