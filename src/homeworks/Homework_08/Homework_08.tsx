@@ -1,41 +1,55 @@
-import Input from "components/Input/Input";
 import Button from "components/Button/Button";
+import Input from "components/Input/Input";
 
-function Homework08() {
-    return (
-        <div style={{display: "flex", flexDirection: "column", gap: 30 }}>
-            <h2>Input Gross</h2>
-            
-            <Input
-            label="Normal Input"
-            name="normal_input"
-            placeholder="Enter text here"
-            />
+import { PageWrapper, Paragraph, FormElementContainer } from "./styles";
 
-            <Input
-            label="Disabled Input"
-            name="disabled_input"
-            placeholder="Can't type here"
-            disabled
-            />
 
-            <Input
-            label="Input with Error"
-            name="error_input"
-            placeholder="Enter text here"
-            error="This field is required"
-            />
 
-            <h2>Button Gross</h2>
+function Homework_08() {
+  const works = () => {
+    console.log("Button works");
+  };
 
-            <Button name="Default Button" />
-
-            <Button name="Red Button" isRed />
-
-            <Button name="Disabled Button" isDisabled />        
-        </div>
-
-    );
+  return (
+    <PageWrapper>
+      <Paragraph>HW8</Paragraph>
+      <FormElementContainer>
+        <Button name="Simple button" onClick={works} />
+      </FormElementContainer>
+      <FormElementContainer>
+        <Button name="Delete button" isRed onClick={works} />
+      </FormElementContainer>
+      <FormElementContainer>
+        <Button name="Disabled button" isDisabled={true} onClick={works} />
+      </FormElementContainer>
+      <FormElementContainer>
+        <Input
+          id="simple_input"
+          label="Simple Input"
+          name="simple"
+          placeholder="Enter message"
+        />
+      </FormElementContainer>
+      <FormElementContainer>
+        <Input
+          id="error_input"
+          label="Error Input"
+          name="error"
+          placeholder="Enter message"
+          error="This field is required"
+        />
+      </FormElementContainer>
+      <FormElementContainer>
+        <Input
+          id="disabled_input"
+          label="Disabled Input"
+          name="disabled"
+          placeholder="Enter message"
+          disabled
+        />
+      </FormElementContainer>
+    </PageWrapper>
+  );
 }
 
-export default Homework08;
+export default Homework_08;
