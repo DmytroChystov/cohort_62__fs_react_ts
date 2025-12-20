@@ -7,6 +7,9 @@
 // import Lesson_09 from "lessons/lesson_09/Lesson_09";
 // import Playground from "components/consultation/Playground/Playground";
 // import Lesson_10 from "lessons/lesson_10/Lesson_10";
+// import {Lesson_11} from "lessons/lesson_11/Lesson_11";
+// import Lesson_12 from "lessons/lesson_12/Lesson_12";
+
 
 
 
@@ -15,7 +18,9 @@
 // import Homework_07 from "homeworks/Homework_07/Homework_07";
 // import Homework_08 from "homeworks/Homework_08/Homework_08";
 // import Homework_09 from "homeworks/Homework_09/Homework_09";
-import Homework_10 from "homeworks/Homework_10/Homework_10";
+// import Homework_10 from "homeworks/Homework_10/Homework_10";
+import Homework_12 from "homeworks/Homework_12/Homework_12";
+
 
 function App() {
   return (
@@ -26,11 +31,15 @@ function App() {
     / <Lesson_08 /> 
     {/* <Lesson_09 /> */}
     {/* <Lesson_10 /> */}
+    {/* <Lesson_11 /> */}
+    {/* <Lesson_12 /> */}
     {/* <Homerwork_06 /> */}
     {/* <Homework_07 /> */}
     {/* <Homework_08 /> */}
     {/* <Homework_09 /> */}
-    <Homework_10 />
+    {/* <Homework_10 /> */}
+    <Homework_12 />
+    
 
     {/* <Playground /> */}
   </>
