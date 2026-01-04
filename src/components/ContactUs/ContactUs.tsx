@@ -77,7 +77,7 @@ function ContactUs() {
           onChange={formik.handleChange}
           error={formik.errors[CONTACT_US_FORM_VALUES.EMAIL]}
         />
-      </InputsContainer>
+      </InputsContainer>   
 
       <Button type="submit" name="SEND REQUEST" />
     </ContactUsContainer>
