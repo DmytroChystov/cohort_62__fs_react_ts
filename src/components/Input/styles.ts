@@ -1,35 +1,53 @@
-import styled from  "@emotion/styled";
+import styled from "@emotion/styled";
+
+interface InputComponentProps {
+  $error?: string | undefined;
+}
+
+const generateInputBorder = (
+  error: string | undefined,
+  disabled: boolean | undefined
+) => {
+  if (disabled) {
+    return "#acacacff";
+  } else {
+    if (!!error) {
+      return "#ff6868ff";
+    } else {
+      return "#3f3f3f";
+    }
+  }
+};
 
 export const InputWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 4px;
+  width: 100%;
 `;
 
-export const Label = styled.label`
-   font-size: 16px;
+export const InputLabel = styled.label`
+  font-size: 16px;
   color: hsl(0, 0%, 44%);
-
 `;
 
-export const StyledInput = styled.input<{ error?: string }>`
-   width: 100%;
+export const InputComponent = styled.input<InputComponentProps>`
+  width: 100%;
   height: 50px;
-  border: 1px solid #3f3f3f;
-  ${({ error }) => (error ? "border-color: #846363ff;" : "")}
-  background-color: ${({ disabled }) => (disabled ? "#15391dff" : "#ffffff")};
+  border: 1px solid
+    ${({ disabled, $error }) => generateInputBorder($error, disabled)};
   border-radius: 4px;
   padding: 12px;
   outline: none;
-;
 
-
-  &:focus {
-    border-color: ${({ error }) => (error ? "#ff6b6b" : "#4a90e2")};
+  &::placeholder {
+    color: #6f6f6f;
+    font-size: 16px;
   }
-  ;
 `;
-export const ErrorText = styled.span`
-  font-size: 14px;
-  color: #ff6b6b;
+
+export const ErrorText = styled.div`
+  height: 18px;
+  font-size: 16px;
+  color: #ff6868ff;
 `;
